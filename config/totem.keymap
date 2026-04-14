@@ -79,7 +79,7 @@
             bindings = <
                   &kp B       &kp L       &kp D         &kp C        &kp V            &kp J          &kp Y        &kp O         &kp U          &kp COMMA
                   &mt LGUI N  &mt LALT R  &mt LCTRL T   &mt LSHFT S  &kp G            &kp P          &mt RSHFT H  &mt RCTRL A   &mt RALT E     &mt RGUI I
-&kp LEFT_CONTROL  &kp X       &kp Q       &kp M         &kp W        &kp Z            &kp K          &kp F        &kp SQT       &kp SEMICOLON  &kp PERIOD  &kp APOS
+&kp LEFT_CONTROL  &kp X       &kp Q       &kp M         &kp W        &kp Z            &kp K          &kp F        &kp SQT       &kp SEMICOLON  &kp PERIOD  &kp SLASH
                                           &kp LEFT_GUI  &kp TAB      &lt NAV ENTER    &lt SYM SPACE  &kp BSPC     &kp LEFT_ALT
             >;
         };
@@ -103,10 +103,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
-            &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
-&caps_word  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
-                                   &trans    &trans     &trans      &mo ADJ   &kp KP_N0     &trans
+            &kp PRINTSCREEN  &none      &kp LC(C)  &kp LC(V)  &kp LBRC    &kp RBRC  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
+            &none            &kp LEFT   &kp UP     &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
+&caps_word  &kp DEL          &kp PG_UP  &kp DOWN   &kp PG_DN  &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
+                                        &trans     &trans     &trans      &mo ADJ   &kp NUMBER_0  &kp DOT
             >;
         };
 
@@ -156,7 +156,7 @@
 
             bindings = <
               &sys_reset    &trans        &out OUT_TOG  &trans        &trans            &trans  &kp F7  &kp F8  &kp F9  &kp F12
-              &bootloader   &trans        &trans        &trans        &trans            &trans  &kp F4  &kp F5  &kp F6  &kp F11
+              &bootloader   &trans        &trans        &trans        &bt BT_CLR        &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                           &trans        &trans        &trans            &trans  &trans  &trans
             >;
